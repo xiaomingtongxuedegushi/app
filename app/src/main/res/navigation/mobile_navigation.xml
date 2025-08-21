@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/two">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.vehiclemanagementsystem.ui.home.HomeFragment"
+        android:label="@string/title_practicalOperation"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.vehiclemanagementsystem.ui.dashboard.DashboardFragment"
+        android:label="@string/title_course"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.vehiclemanagementsystem.ui.notifications.NotificationsFragment"
+        android:label="@string/title_examination"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/two"
+        android:name="com.example.vehiclemanagementsystem.ui.addbotton.Addbotton"
+        android:label="@string/title_My"
+        tools:layout="@layout/addbotton_fragment" />
+    <fragment
+        android:id="@+id/one"
+        android:name="com.example.vehiclemanagementsystem.ui.adddiagnosis.DiagnosisFragment"
+        android:label="@string/title_My"
+        tools:layout="@layout/diagnosis_fragment" />
+</navigation>

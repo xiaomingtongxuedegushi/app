@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_actionPadding="20dp"
+        android:background="#89a2fe"
+        app:tb_useThemeColor="false"
+        app:tb_leftImageResource="@color/purple_200"
+        app:tb_titleText="考试"
+        tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

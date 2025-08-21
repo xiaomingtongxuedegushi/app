@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/kc"
+        android:title="课程" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ks"
+        android:title="考试" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/sc"
+        android:title="实操" />
+    <item
+        android:id="@+id/one"
+        android:icon="@drawable/zd"
+        android:title="诊断仪" />
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/wd"
+        android:title="我的" />
+
+
+
+</menu>

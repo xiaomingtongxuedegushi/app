@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_actionPadding="20dp"
+        android:background="#89a2fe"
+        app:tb_useThemeColor="false"
+        app:tb_leftImageResource="@color/purple_200"
+        app:tb_titleText="注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/user"/>
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/edit_register_user"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:hint="输入学号"
+                android:textSize="15dp"
+                android:textAlignment="viewStart" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dlmm"/>
+            <com.xuexiang.xui.widget.edittext.PasswordEditText
+                android:id="@+id/edit_register_password"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:hint="输入密码"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:textAlignment="viewStart"
+                app:pet_enableIconAlpha="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/name"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"/>
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/edit_register_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@drawable/xb"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"/>
+        <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:id="@+id/spinner_gender"
+            style="@style/Material.SpinnerStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:enabled="true"
+            app:ms_entries="@array/sort_mode_gender" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@drawable/bj"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"/>
+
+        <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:id="@+id/spinner_grade"
+            style="@style/Material.SpinnerStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:enabled="true" />
+    </LinearLayout>
+
+
+            <com.xuexiang.xui.widget.button.ButtonView
+                app:textSolidColor="#89a2fe"
+                android:id="@+id/btn_register_zc"
+                style="@style/ButtonView.Green"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="立即注册"
+                android:textSize="20dp"
+                app:textSelectedSolidColor="@color/zi"
+                app:textRadius="52dp" />
+
+
+
+</LinearLayout>

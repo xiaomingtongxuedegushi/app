@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addbotton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.addbotton.Addbotton">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_actionPadding="20dp"
+        android:background="#89a2fe"
+        app:tb_useThemeColor="false"
+        app:tb_leftImageResource="@color/purple_200"
+        app:tb_titleText="我的" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="姓名："
+        app:sCenterTextSize="20dp" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_student"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="学号："
+        app:sCenterTextSize="20dp" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="性别"
+        app:sCenterTextSize="20dp" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_bj"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="班级"
+        app:sCenterTextSize="20dp" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="修改密码"
+        app:sCenterTextSize="20dp"
+        app:sRightIconRes="@drawable/icon_arrow_right_red" />
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_class"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="修改班级"
+        app:sCenterTextSize="20dp"
+        app:sRightIconRes="@drawable/icon_arrow_right_red" />
+<!--    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+<!--        android:id="@+id/super_txt_score"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:sDividerLineType="both"-->
+<!--        app:sLeftTextString="查看成绩"-->
+<!--        app:sCenterTextSize="20dp"-->
+<!--        app:sRightIconRes="@drawable/icon_arrow_right_red" />-->
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/super_txt_updata"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:sDividerLineType="both"
+        app:sLeftTextString="检查更新"
+        app:sCenterTextSize="20dp"
+        app:sRightIconRes="@drawable/icon_arrow_right_red" />
+
+
+
+</LinearLayout>

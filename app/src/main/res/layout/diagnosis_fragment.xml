@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diagnosis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.adddiagnosis.DiagnosisFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <com.xuexiang.xui.widget.actionbar.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tb_barHeight="65dp"
+            app:tb_sideTextPadding="20dp"
+            app:tb_actionPadding="20dp"
+            android:background="#89a2fe"
+            app:tb_useThemeColor="false"
+            app:tb_leftImageResource="@color/purple_200"
+            app:tb_titleText="诊断仪"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:screenReaderFocusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dianosis_webview"/>
+        <ProgressBar
+            android:id="@+id/progressbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

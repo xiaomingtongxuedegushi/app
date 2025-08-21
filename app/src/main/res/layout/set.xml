@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_actionPadding="20dp"
+        android:background="#89a2fe"
+        app:tb_useThemeColor="false"
+        app:tb_leftImageResource="@color/purple_200"
+        app:tb_titleText="修改班级" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="请选择要修改的班级:"
+            android:textSize="18dp"
+            android:layout_marginTop="150dp"/>
+    <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+        android:layout_width="200dp"
+        android:layout_height="28dp"
+        android:id="@+id/set_grade"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        style="@style/Material.SpinnerStyle"
+        android:enabled="true"
+        app:ms_entries="@array/sort_grade" />
+    </LinearLayout>
+    <com.xuexiang.xui.widget.button.ButtonView
+        app:textSolidColor="#89a2fe"
+        android:id="@+id/set_btn"
+        style="@style/ButtonView.Green"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="确认修改"
+        android:textSize="20dp"
+        app:textSelectedSolidColor="@color/zi"
+        app:textRadius="52dp" />
+
+
+
+</LinearLayout>
